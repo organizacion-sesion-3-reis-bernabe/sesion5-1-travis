@@ -17,8 +17,13 @@ class Calculator
         return $a / $b;
     }
  
-    public function espar($a): float
+    public function espar($a): int
     {
-        return $a%2;
+        if ($a%2==0){
+         return 1;
+        }
+        else{
+         return 0;
+        }
     }
 }
