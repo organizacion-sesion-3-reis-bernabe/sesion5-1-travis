@@ -39,10 +39,14 @@ class CalculatorTest extends TestCase
         $result = $this->calculator->espar(10);
         $this->assertEquals(1, $result);
          
-         $result = $this->calculator->espar(3);
-        $this->assertEquals(0, $result);
     }
     
+      public function testEsPar2(): void
+    {
+        $result = $this->calculator->espar(5);
+        $this->assertEquals(0, $result);
+         
+    }
     
  
 }
